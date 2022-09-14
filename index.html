@@ -1,161 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <title>My Portfolio | Tarsisius Risto A</title>
-  </head>
-  <body>
-    <header>
-      <!-- NavBar -->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-2">
-        <div class="container">
-          <div class="box fs-8">
-            <span>TR</span>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tentang">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#resume">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#kontak">Contact</a>
-              </li>
-            </ul>
-            <div class="animation start-home"></div>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPortfolio</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">TR</a>
+    <div class="righSide">
+        <div class="btns dayNight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
         </div>
-      </nav>
-      
-      <!-- Akhir NavBar -->
-    </header>
-
-    <main>
-      <!-- Wave -->
-      <nav class="animation">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-      </nav>
-      <!-- End Animation Wave -->
-
-      <!-- Home -->
-      <section class="home text-center" id="home">
-        <div class="display">
-          <h1>
-            Hallo
-            <small class="font-monospace">
-              <p>Mahasiswa Informatika</p>
-            </small>
-          </h1>
+        <div class="btns menuToggle">
+            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
         </div>
-      </section>
-      <!-- Akhir Home -->
+    </div>
+</header>
+<section class="main">
+    <video src="video/ocean.mp4" autoplay loop muted type = "mp4"></video>
+    <img src= "Images/mask.jpg"class="mask">
+    <h2>TRA</h2>
+    <ul class="sci">
+      <li>
+        <a href="https://www.facebook.com/tarsisius.risto/">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+    </li>
+      <li>
+        <a href="https://www.instagram.com/rist.trs/">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </li>
+      <li>
+        <a href="https://twitter.com/ristttt_">
+          <ion-icon name="logo-twitter">
+          </ion-icon>
+        </a>
+      </li>
+  </ul>
+</section>
 
-      <!-- Tentang -->
-      <section id="tentang">
-        <div class="container-md">
-          <div class="row text-center pb-5">
-            <div class="col">
-              <h2 class="TitleTentang">Tentang</h2>
-            </div>
-          </div>
-          <div class="row justify-content-between fs-4 font-monospace">
-            <div class="col-md-5">
-              <p>Halo, nama saya Tarsisius Risto Ardianto, saya Mahasiswa Informatika dari Universitas Sanata Dharma saat ini saya lagi berusaha belajar HTML</p>
-            </div>
-            <div class="col-md-5">
-              <p>Untuk meraih apa yang benar benar kamu inginkan, fokus saja tidak cukup. Kamu harus memiliki rasa lapar untuk meraihnya</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Akhir Tentang -->
+<!-- About -->
+<section class="about adjust text-center" id="about">
+  <div class="title">
+    <h2> About Me</h2>
+  </div>
+  <div class="content">
+    <div class="textBox">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis officia illo, delectus facilis voluptatum dolor nam reprehenderit tempora eum qui ipsam vitae fuga, illum dolorum perspiciatis beatae doloribus! Ad ullam illum similique accusantium ipsum temporibus dignissimos ea mollitia sit atque repudiandae soluta, quos dolor distinctio recusandae dolore ipsa. Mollitia soluta qui accusamus eaque quaerat necessitatibus dicta alias incidunt delectus distinctio. Odio aliquam nulla aperiam, totam porro natus veniam explicabo, iusto autem aliquid consequatur nemo harum pariatur omnis ratione officiis tenetur laborum, facilis cum cupiditate. <br><br> Voluptatem expedita nobis qui soluta iure eligendi mollitia autem, ut iusto fugit repudiandae suscipit voluptate, vitae dolorum minima nulla. <br><br> Atque minima optio itaque eum! Et illo sint in dolorem eveniet nihil mollitia? Sed iusto ipsum velit in error minus necessitatibus maiores illum aperiam quam, aut asperiores, aliquid temporibus, atque eos ab dolorum cumque est pariatur laborum doloribus sequi maxime. In, tempora. Odio, atque animi perferendis ratione eligendi distinctio ut obcaecati eveniet officia esse earum aspernatur numquam fugiat culpa iste beatae officiis, sapiente dignissimos enim corrupti nobis. Consequuntur beatae quasi sequi minus impedit iste ad, veritatis voluptatem itaque esse asperiores odio, quidem perferendis, dolore cumque. Ipsam velit corporis natus veritatis sapiente vel molestias mollitia at exercitationem ut?</p>
+    </div>
+    <div class="imgBox">
+      <img src="Images/Photo.svg">
+    </div>
+  </div>
+</section>
+<!-- End About -->
 
-      <!-- Resume -->
-      <section id="resume">
-        <div class="container-md">
-          <div class="row text-center pb-5">
-            <div class="col">
-              <h2 class="titleResume">Resume</h2>
-            </div>
-          </div>
-          <div class="row justify-content-between fs-4 font-monospace">
-            <div class="col-md-5">
-              <p>Halo, nama saya Tarsisius Risto Ardianto, saya Mahasiswa Informatika dari Universitas Sanata Dharma saat ini saya lagi berusaha belajar HTML</p>
-            </div>
-            <div class="col-md-5">
-              <p>Untuk meraih apa yang benar benar kamu inginkan, fokus saja tidak cukup. Kamu harus memiliki rasa lapar untuk meraihnya</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- sidebar -->
+<ul class="navigation">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
 
-      <!-- Kontak -->
-      <section id="kontak">
-        <div class="container">
-          <div class="row text-center pb-2">
-            <!-- <div class="col"> -->
-            <h2>Kontak</h2>
 
-            <div class="col d-flex justify-content-center">
-              <a href="https://www.instagram.com/rist.trs/" class="link">
-                <i class="fa-brands fa-instagram instagram"></i>
-              </a>
-              <a href="https://twitter.com/ristttt_" class="link">
-                <i class="fa-brands fa-twitter twitter"></i>
-              </a>
-              <a href="https://www.facebook.com/tarsisius.risto/" class="link">
-                <i class="fa-brands fa-facebook facebook"></i>
-              </a>
-              <a href="#" class="link">
-                <i class="fa-brands fa-discord discord"></i>
-              </a>
-            </div>
-            <div class="col">Kontak email</div>
-          </div>
-        </div>
-      </section>
-      <!-- Akhir Kontak -->
-    </main>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+let dayNight = document.querySelector('.dayNight')
+let menuToggle = document.querySelector('.menuToggle')
+let body = document.querySelector('body')
+let navigation = document.querySelector('.navigation')
 
-    <!-- footer -->
-    <footer></footer>
-    <!-- akhir footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-      var nav = document.querySelector("nav");
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 100) {
-          nav.classList.add("bg-dark", "shadow");
-        } else {
-          nav.classList.remove("bg-dark", "shadow");
-        }
-      })
-    </script>
-  </body>
+dayNight.onclick = function(){
+    body.classList.toggle('dark')
+    dayNight.classList.toggle('active')
+}
+menuToggle.onclick = function(){
+    navigation.classList.toggle('active')
+    menuToggle.classList.toggle('active')
+}
+</script>
+</body>
 </html>
